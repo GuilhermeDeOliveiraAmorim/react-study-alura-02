@@ -7,6 +7,11 @@ export default function Cardapio() {
             <nav className={StyleCardapio.menu}>
                 <Logo /> Aluroni
             </nav>
+            <header className={StyleCardapio.header}>
+                <div className={StyleCardapio.header__text}>
+
+                </div>
+            </header>
         </main>
     )
 }
