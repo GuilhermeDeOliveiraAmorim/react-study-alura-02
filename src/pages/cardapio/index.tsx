@@ -5,7 +5,7 @@ export default function Cardapio() {
     return (
         <main>
             <nav className={StyleCardapio.menu}>
-                <Logo />
+                <Logo /> Aluroni
             </nav>
         </main>
     )
