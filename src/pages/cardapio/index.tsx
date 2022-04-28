@@ -9,7 +9,7 @@ export default function Cardapio() {
             </nav>
             <header className={StyleCardapio.header}>
                 <div className={StyleCardapio.header__text}>
-
+                    A casa da massa do código
                 </div>
             </header>
         </main>

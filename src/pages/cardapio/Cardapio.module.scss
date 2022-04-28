@@ -1,5 +1,7 @@
+@import 'styles/variaveis.scss';
+
 .menu {
-    padding: 20px 250px;
+    padding: 20px $p-h;
 }
 
 .header {
@@ -7,7 +9,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
+    display: flex;
+    align-items: center;
+    padding: 0 $p-h;
     &__text {
-
+        color: white;
+        font-size: 5rem;
+        min-width: 400px;
+        width: 40%;
     }
 }
