@@ -10,11 +10,11 @@ export default function Cardapio() {
     return (
         <main>
             <nav className={StyleCardapio.menu}>
-                <Logo /> Aluroni
+                <Logo />
             </nav>
             <header className={StyleCardapio.header}>
                 <div className={StyleCardapio.header__text}>
-                    A casa da massa do código
+                    A casa da massa
                 </div>
             </header>
             <section className={StyleCardapio.cardapio}>
