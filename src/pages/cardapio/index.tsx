@@ -7,9 +7,11 @@ import Ordenador from './ordenador';
 import Itens from './itens';
 
 export default function Cardapio() {
+
     const [busca, setBusca] = useState("");
     const [filtro, setFiltro] = useState<number | null>(null);
     const [ordenador, setOrdenador] = useState("");
+    
     return (
         <main>
             <nav className={StyleCardapio.menu}>
@@ -29,7 +31,7 @@ export default function Cardapio() {
                     <Filtros filtro={filtro} setFiltro={setFiltro} />
                     <Ordenador ordenador={ordenador} setOrdenador={setOrdenador} />
                 </div>
-                <Itens />
+                <Itens busca={busca} filtro={filtro} ordenador={ordenador} />
             </section>
         </main>
     )
