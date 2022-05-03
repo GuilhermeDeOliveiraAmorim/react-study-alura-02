@@ -14,11 +14,6 @@ export default function Cardapio() {
     
 	return (
 		<>
-			<header className={StyleCardapio.header}>
-				<div className={StyleCardapio.header__text}>
-                    A casa da massa
-				</div>
-			</header>
 			<section className={StyleCardapio.cardapio}>
 				<h3 className={StyleCardapio.cardapio__titulo}>
                     Cardápio
