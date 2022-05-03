@@ -5,7 +5,6 @@ import Filtros from './filtros';
 import Ordenador from './ordenador';
 import Itens from './itens';
 import React from 'react';
-import Menu from 'components/menu';
 
 export default function Cardapio() {
 
@@ -14,7 +13,7 @@ export default function Cardapio() {
 	const [ordenador, setOrdenador] = useState('');
     
 	return (
-		<main>
+		<>
 			<header className={StyleCardapio.header}>
 				<div className={StyleCardapio.header__text}>
                     A casa da massa
@@ -31,6 +30,6 @@ export default function Cardapio() {
 				</div>
 				<Itens busca={busca} filtro={filtro} ordenador={ordenador} />
 			</section>
-		</main>
+		</>
 	);
 }
