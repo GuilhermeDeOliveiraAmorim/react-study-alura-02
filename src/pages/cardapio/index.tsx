@@ -5,6 +5,7 @@ import Filtros from './filtros';
 import Ordenador from './ordenador';
 import Itens from './itens';
 import React from 'react';
+import StyleTema from 'styles/Tema.module.scss';
 
 export default function Cardapio() {
 
@@ -15,7 +16,7 @@ export default function Cardapio() {
 	return (
 		<>
 			<section className={StyleCardapio.cardapio}>
-				<h3 className={StyleCardapio.cardapio__titulo}>
+				<h3 className={StyleTema.titulo}>
                     Cardápio
 				</h3>
 				<Buscador busca={busca} setBusca={setBusca} />
