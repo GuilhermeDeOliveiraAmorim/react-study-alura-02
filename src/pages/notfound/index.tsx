@@ -9,7 +9,7 @@ export default function NotFound() {
 			[StylesNotFound.container]: true,
 			[StylesTema.container]: true
 		})}>
-			<NotFoundImage />
+			<NotFoundImage style={{height:'300px'}} />
 		</div>
 	);
 }
