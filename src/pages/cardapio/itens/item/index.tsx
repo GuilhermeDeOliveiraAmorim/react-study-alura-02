@@ -1,10 +1,10 @@
 import React from 'react';
 import StyleItem from './Item.module.scss';
-import classNames from 'classnames';
 import { Prato } from 'types/Prato';
+import TagsPrato from 'components/tagsPrato';
 
 export default function Item(props: Prato) {
-	const { title, description, category, size, serving, price, photo } = props;
+	const { title, description, photo } = props;
 
 	return (
 		<div className={StyleItem.item}>
@@ -16,25 +16,7 @@ export default function Item(props: Prato) {
 					<h2>{title}</h2>
 					<p>{description}</p>
 				</div>
-				<div className={StyleItem.item__tags}>
-					<div
-						className={classNames({
-							[StyleItem.item__tipo]: true,
-							[StyleItem[
-								`item__tipo__${category.label.toLowerCase()}`
-							]]: true,
-						})}
-					>
-						{category.label}
-					</div>
-					<div className={StyleItem.item__qtdpessoas}>{size}g</div>
-					<div className={StyleItem.item__porcao}>
-                        Serve até {serving} pessoa{serving === 1 ? '' : 's'}
-					</div>
-					<div className={StyleItem.item__valor}>
-                        R$ {price.toFixed(2)}
-					</div>
-				</div>
+				<TagsPrato {...props}  />
 			</div>
 		</div>
 	);
